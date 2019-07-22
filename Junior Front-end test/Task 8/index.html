@@ -18,7 +18,7 @@
             <form name="myForm" method="POST" id="myForm" action="">
                 <div class="email forms">
                     <label for="email">Email:</label>
-                    <input type="email" onkeyup="validation.validateform()" id="email" placeholder="Enter email" name="email" required>
+                    <input type="email" id="email" placeholder="Enter email" name="email" required>
                     <small id="email-error-msg" class="hidden">Invalid email address</small>
                 </div>
                 <div class="password forms">
@@ -27,7 +27,7 @@
                         <li>the password must be atlease 6 symbols long</li>
                         <li>must contain number, capital and small letters</li>
                     </ul>
-                    <input type="password" id="password" placeholder="Enter password" name="password" onkeyup="validation.validateform()" required>
+                    <input type="password" id="password" placeholder="Enter password" name="password" required>
                     <small id="password-error-msg" class="hidden">Incorect password</small>
                 </div>
                 <button id="submit-btn" type="submit" class="btn-primary">Submit</button>
