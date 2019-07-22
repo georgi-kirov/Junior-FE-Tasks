@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container jumbotron">
+        <form name="myForm" method="POST" id="myForm" action="">
+            <div class="email-container">
+                <input type="text" name="email" placeholder="Enter E-mail" id="email" >
+                <small id="email-error-msg" class="hidden">Invalid email address</small>
+            </div>
+            <div class="password-container">
+                <input type="password" name="password" id="password" placeholder="Enter password">
+                <small id="password-error-msg" class="hidden">Incorect password</small>
+            </div>
+            <div class="button-container">
+                <button type="submit" id="submit-btn" class="btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="./src/scripts/script.js"></script>
+</body>
+</html>

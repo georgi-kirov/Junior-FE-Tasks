@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container jumbotron">
+        <div class="form-container">
+            <form name="myForm" method="POST" id="myForm" action="">
+                <div class="email forms">
+                    <label for="email">Email:</label>
+                    <input type="email" onkeyup="validation.validateform()" id="email" placeholder="Enter email" name="email" required>
+                    <small id="email-error-msg" class="hidden">Invalid email address</small>
+                </div>
+                <div class="password forms">
+                    <label for="password">Password:</label>
+                    <ul class="password-requirements">
+                        <li>the password must be atlease 6 symbols long</li>
+                        <li>must contain number, capital and small letters</li>
+                    </ul>
+                    <input type="password" id="password" placeholder="Enter password" name="password" onkeyup="validation.validateform()" required>
+                    <small id="password-error-msg" class="hidden">Incorect password</small>
+                </div>
+                <button id="submit-btn" type="submit" class="btn-primary">Submit</button>
+            </form>
+        </div>
+          
+    </div>
+    <script src="./src/scripts/script.js"></script>
+</body>
+</html>

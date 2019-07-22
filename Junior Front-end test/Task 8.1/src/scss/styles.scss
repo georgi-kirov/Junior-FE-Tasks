@@ -1,0 +1,31 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+.container {
+    #myForm {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+        > div {
+            text-align:center;
+            margin:5px;
+            display: flex;
+            flex-direction: column;
+
+            small  {
+                color: red;
+                &.hidden {
+                    display: none;
+                }
+            }
+        }
+
+        .button-container {
+            #submit-btn{
+                &:disabled {
+                    opacity: .5;
+                }
+            }
+        }
+    }
+}
